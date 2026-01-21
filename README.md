@@ -6,42 +6,64 @@ CS2042 – Software Engineering
 ## Assignment
 Agile Development with Git and Unit Testing
 
-## Project Description
-This project is a simple Library Book Management System.
-It is developed using an Agile approach and completed in
-three sprints.
+## Description
+This project is a simple Library Book Management System developed using
+an Agile, sprint-based approach. The system allows a librarian to add
+books, borrow and return books, and generate a library report.
 
-The system is built using Python and uses in-memory data
-structures only. No database is used.
+The project is implemented in Python and uses in-memory data structures.
+No database is used.
 
-## Tools Used
-- Python
-- unittest
-- Git
+## Technology Stack
+- Programming Language: Python
+- Testing Framework: unittest
+- Version Control: Git
 - github
 
-## Agile Process
-The project is divided into three sprints:
-- Sprint 1: Book Registration
-- Sprint 2: Borrow and Return Book
-- Sprint 3: Library Report
+## Agile Development Approach
+The project is developed in three sprints:
 
-Each sprint is developed in a separate Git branch and merged
-into the main branch only after all tests pass.
+### Sprint 1 – Book Registration
+- Add a new book with Book ID, title, and author
+- Reject duplicate Book IDs
+
+### Sprint 2 – Borrow and Return Book
+- Borrow a book
+- Return a borrowed book
+- Prevent borrowing an already borrowed book
+
+### Sprint 3 – Library Report
+- Generate a report showing book ID, title, author, and status
+
+Each sprint was developed in a separate Git feature branch and merged
+into the main branch after successful unit testing.
 
 ## Project Structure
-
 library-se/
-├── src/library.py
-├── tests/test_library.py
-├── docs/USER_STORIES.md
-├── docs/TRACEABILITY.md
+├── src/
+│ └── library.py
+├── tests/
+│ └── test_library.py
+├── docs/
+│ ├── USER_STORIES.md
+│ └── TRACEABILITY.md
 ├── README.md
 └── .gitignore
 
-## TO RUN TESTS
+
+## Running Unit Tests
+Run the following command from the project root:
+
 python -m unittest discover -s tests -p "test_*.py" -v
 
 
-This file will be updated after each sprint.
+## Git Tags
+- v0.1 – Sprint 1 completed
+- v0.2 – Sprint 2 completed
+- v0.3 – Sprint 3 completed
+
+## Conclusion
+This project demonstrates the use of Agile development practices,
+test-driven development, and proper Git workflow using branches,
+merges, and tags.
 
