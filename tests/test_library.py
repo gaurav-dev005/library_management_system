@@ -19,8 +19,5 @@ class TestLibrarySprint1(unittest.TestCase):
         with self.assertRaises(ValueError):
             lib.add_book("B1", "Refactoring", "Martin Fowler")
 
-
-
-
 if __name__ == "__main__":
     unittest.main()
