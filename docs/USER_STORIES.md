@@ -33,4 +33,9 @@ So that the book becomes available again.
 
 
 ## Sprint 3 – Library Report
-*(To be implemented)*
+## Sprint 3 – Library Report
+
+**US-3.1**  
+Generating a library report,  
+So that one can see all books with their details and status.
+
