@@ -47,9 +47,26 @@ class TestLibrary(unittest.TestCase):
         lib.return_book("B1")
 
         self.assertEqual(lib.books["B1"]["status"], "available")
+    #  sprint-3 tests
+
+    def test_generate_library_report(self):
+        lib = Library()
+        lib.add_book("B1", "Clean Code", "Robert Martin")
+        lib.add_book("B2", "Refactoring", "Martin Fowler")
+        lib.borrow_book("B1")
+
+        report = lib.generate_report()
+
+        self.assertIsInstance(report, list)
+        self.assertEqual(len(report), 2)
+
+        self.assertEqual(report[0]["book_id"], "B1")
+        self.assertIn("status", report[0])
 
 
 if __name__ == "__main__":
     unittest.main()
+    
+
 
 
