@@ -16,7 +16,20 @@ So that each book can be uniquely identified.
 
 
 ## Sprint 2 – Borrow and Return Book
-*(To be implemented)*
+
+## Sprint 2 – Borrow and Return Book
+
+**US-2.1**  
+Borrowing a book and status of book should be marked borrowed
+
+**US-2.2**  
+System should prevent borrowing a book that is already borrowed,  
+So that incorrect borrowing is avoided.
+
+**US-2.3**  
+Return a borrowed book,  
+So that the book becomes available again.
+
 
 
 ## Sprint 3 – Library Report
