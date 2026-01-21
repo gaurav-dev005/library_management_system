@@ -15,7 +15,6 @@ The traceability matrix is updated incrementally after each sprint.
 
 ---
 
-## Sprint 2 – Borrow and Return Book
 
 ## Sprint 2 – Borrow and Return Book
 
@@ -30,4 +29,9 @@ The traceability matrix is updated incrementally after each sprint.
 ---
 
 ## Sprint 3 – Library Report
-*(To be updated)*
+
+| User Story ID | Description           | Code File | Test Case | Git Tag |
+|--------------|----------------------- |-----------|-----------|---------|
+| US-3.1       | Generate library report | TBD      | TBD       | TBD     |
+
+**NOTE** : TBD -> To Be Done
