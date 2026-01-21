@@ -19,11 +19,12 @@ The traceability matrix is updated incrementally after each sprint.
 
 ## Sprint 2 – Borrow and Return Book
 
-| User Story ID | Description                    | Code File | Test Case | Git Tag |
-|--------------|--------------------------------|-----------|-----------|---------|
-| US-2.1       | Borrow a book                  | TBD       | TBD       | TBD     |
-| US-2.2       | Prevent borrowing borrowed book| TBD       | TBD       | TBD     |
-| US-2.3       | Return a borrowed book         | TBD       | TBD       | TBD     |
+| User Story ID | Description                    | Code File                    | Test Case                          | Git Tag |
+|--------------|--------------------------------|------------------------------|------------------------------------|---------|
+| US-2.1       | Borrow a book                  | library.py:borrow_book       | test_borrow_book_success           | v0.2    |
+| US-2.2       | Reject borrowing borrowed book | library.py:borrow_book       | test_borrow_already_borrowed_book  | v0.2    |
+| US-2.3       | Return a borrowed book         | library.py:return_book       | test_return_book_success           | v0.2    |
+
 
 
 ---
