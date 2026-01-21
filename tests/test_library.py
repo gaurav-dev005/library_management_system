@@ -2,7 +2,9 @@ import unittest
 from src.library import Library
 
 
-class TestLibrarySprint1(unittest.TestCase):
+class TestLibrary(unittest.TestCase):
+
+    # Sprint 1 Tests
 
     def test_add_book_success(self):
         lib = Library()
@@ -19,5 +21,35 @@ class TestLibrarySprint1(unittest.TestCase):
         with self.assertRaises(ValueError):
             lib.add_book("B1", "Refactoring", "Martin Fowler")
 
+    # Sprint 2 Tests
+
+    def test_borrow_book_success(self):
+        lib = Library()
+        lib.add_book("B1", "Clean Code", "Robert Martin")
+
+        lib.borrow_book("B1")
+
+        self.assertEqual(lib.books["B1"]["status"], "borrowed")
+
+    def test_borrow_already_borrowed_book(self):
+        lib = Library()
+        lib.add_book("B1", "Clean Code", "Robert Martin")
+        lib.borrow_book("B1")
+
+        with self.assertRaises(ValueError):
+            lib.borrow_book("B1")
+
+    def test_return_book_success(self):
+        lib = Library()
+        lib.add_book("B1", "Clean Code", "Robert Martin")
+        lib.borrow_book("B1")
+
+        lib.return_book("B1")
+
+        self.assertEqual(lib.books["B1"]["status"], "available")
+
+
 if __name__ == "__main__":
     unittest.main()
+
+
